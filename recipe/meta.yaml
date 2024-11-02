@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: biotraj
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/biotite-dev/biotraj/archive/v{{ version }}.tar.gz
-  sha256: 4c93641dfa138d067be8d3aeb8f07be6342ec76d450ad3ab1801a92bfdbfbf85
+  sha256: cc692e8048c5625d20996162b2c1d332b5b626dbc121b3d1a73f1eb546af2b7a
 
 build:
-  number: 1
+  number: 0
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}  # [not win]
     - set SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}     # [win]
